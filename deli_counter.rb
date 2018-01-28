@@ -9,12 +9,12 @@ def line(place)
   end
 end
 
-def take_a_number(array, name)
-  if array.length == 0
-    array << name
-    puts "Welcome, #{queue[0]}. You are number #{array.length} in line."
+def take_a_number(queue, name)
+  if queue.length == 0
+    queue << name
+    puts "Welcome, #{queue[0]}. You are number #{queue.length} in line."
   elsif queue.length != 0
-    array << name
-    puts "Welcome, #{queue[-1]}. You are number #{array.length} in line."
+    queue<< name
+    puts "Welcome, #{queue[-1]}. You are number #{queue.length} in line."
   end
 end
