@@ -22,8 +22,8 @@ end
 def now_serving(queue)
   if queue.length == 0
     puts "There is nobody waiting to be served!"
-  elsif queue.length > 0
-    puts "Currently serving #{queue[0]}"
+  elsif queue.length != 0
+    puts "Currently serving #{queue[0]}."
     queue.shift
   end
 end
